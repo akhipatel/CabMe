@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cabme_accent_blue">
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo_blue"
+        android:backgroundTint="@color/quantum_white_100"/>
+
+<LinearLayout
+    android:id="@+id/buttons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="200dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageButton
+            android:id="@+id/driver"
+            android:layout_width="130dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/driver_yellow"
+            android:backgroundTint="@color/cabme_accent_yellow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/quantum_white_100"
+            android:gravity="center"
+            android:text="DRIVER"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/linearLayout"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/rider"
+            android:layout_width="130dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/cabme_accent_yellow"
+            android:background="@drawable/rider_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/quantum_white_100"
+            android:gravity="center"
+            android:text="RIDER"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/quantum_white_100"
+        android:text="View Profile"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/cabme_bg_dark_grey"
+        android:layout_below="@+id/buttons" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fui_transparent"
+        android:textAllCaps="false"
+        android:textColor="@color/quantum_white_100"
+        android:text="Logout"
+        android:layout_below="@id/profile"/>
+
+
+</RelativeLayout>
